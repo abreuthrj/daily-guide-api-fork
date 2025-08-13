@@ -1,0 +1,5 @@
+export const DATABASE_CONFIG = 'DATABASE_CONFIG';
+
+export const DATA_SOURCE = 'DATA_SOURCE';
+
+export const USER_REPOSITORY = 'USER_REPOSITORY';

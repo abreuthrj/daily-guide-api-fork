@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  database:
+    image: postgres
+    container_name: daily_guide-database
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    ports:
+      - 5432:5432

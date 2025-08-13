@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www
+hooks:
+  BeforeInstall:
+    - location: infra/scripts/beforeInstall.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: infra/scripts/afterInstall.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: infra/scripts/appStop.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: infra/scripts/appStart.sh
+      timeout: 300
+      runas: root
