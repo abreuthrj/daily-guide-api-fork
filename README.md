@@ -29,7 +29,9 @@ Planetary positions based on birth date
 
 Frontend: Mobile-first UI with light/dark themes
 
-Backend: Firebase for authentication, data storage, and messaging
+Backend: Firebase for authentication and messaging
+
+Infrastructure: AWS for hosting and database
 
 AI Integration: OpenAI API for content generation
 
