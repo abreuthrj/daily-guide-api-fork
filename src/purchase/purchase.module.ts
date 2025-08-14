@@ -16,7 +16,7 @@ import { PurchaseService } from './purchase.service';
     JwtModule.registerAsync({
       inject: [appleConfig.KEY],
       useFactory: (appleConfig: AppleConfig) => ({
-        privateKey: fs.readFileSync('SubscriptionKey_7H8MXPBSZN.p8'),
+        privateKey: fs.readFileSync('private/SubscriptionKey_7H8MXPBSZN.p8'),
         signOptions: {
           algorithm: 'ES256',
           keyid: appleConfig.keyId,

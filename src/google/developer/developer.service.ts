@@ -11,7 +11,7 @@ export class GoogleDeveloperService {
 
   constructor() {
     const googleCredentials = JSON.parse(
-      fs.readFileSync('daily-guide-api-b34372b73103.json').toString(),
+      fs.readFileSync('private/daily-guide-api-b34372b73103.json').toString(),
     );
 
     this.JWTClient = new google.Auth.JWT(
